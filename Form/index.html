@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Form FreeCodeCamp</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        
+        <h1 id="title">Vitra</h1>
+        <p id="description">A design case study.</p>
+
+        <form id="survey-form">
+            <div class="form-group">
+              <label id="name-label" for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label id="email-label" for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Enter your Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label id="number-label" for="number"
+                >Age<span class="clue">(optional)</span></label
+              >
+              <input
+                type="number"
+                name="age"
+                id="number"
+                min="10"
+                max="99"
+                class="form-control"
+                placeholder="Age"
+              />
+            </div>
+            <div class="form-group">
+              <p>Which option best describes you?</p>
+              <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Select current role</option>
+                <option value="lover">Chair lover</option>
+                <option value="designer">Chair designer</option>
+                <option value="collector">Chair collector</option>
+                <option value="preferNo">Prefer not to say</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+        
+            <div class="form-group">
+              <p>How many chairs did you buy in Vitra?</p>
+              <label>
+                <input
+                  name="user-recommend"
+                  value="0-5"
+                  type="radio"
+                  class="input-radio"
+                  checked
+                />0-5</label
+              >
+              <label>
+                <input
+                  name="user-recommend"
+                  value="5-10"
+                  type="radio"
+                  class="input-radio"
+                />5-10</label
+              >
+        
+              <label
+                ><input
+                  name="user-recommend"
+                  value="10+"
+                  type="radio"
+                  class="input-radio"
+                />10 or more</label
+              >
+            </div>
+        
+            <div class="form-group">
+              <p>
+                Which of these chairs do you like most?
+              </p>
+              <select id="most-like" name="mostLike" class="form-control" required>
+                <option disabled selected value>Select an option</option>
+                <option value="lounge">Lounge Chair and Ottoman</option>
+                <option value="panton">Panton Chair</option>
+                <option value="coconut">Coconut chair</option>
+                <option value="plastic">Plastic Chair</option>
+              </select>
+            </div>
+        
+            <div class="form-group">
+              <p>
+                In whisch design areas are you interested?
+                <span class="clue">(Check all that apply)</span>
+              </p>
+        
+              <label
+                ><input
+                  name="prefer"
+                  value="product"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Product Design</label
+              >
+              <label>
+                <input
+                  name="prefer"
+                  value="graphic"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Graphic Design</label
+              >
+              <label
+                ><input
+                  name="prefer"
+                  value="industrial"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Industrial design</label
+              >
+              <label
+                ><input
+                  name="prefer"
+                  value="fashion"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Fashion Design</label
+              >
+            </div>
+        
+            <div class="form-group">
+              <p>Any comments or suggestions?</p>
+              <textarea
+                id="comments"
+                class="input-textarea"
+                name="comment"
+                placeholder="Enter your comment here..."
+              ></textarea>
+            </div>
+        
+            <div class="form-group">
+              <button type="submit" id="submit" class="submit-button">
+                Submit
+              </button>
+            </div>
+          </form>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
